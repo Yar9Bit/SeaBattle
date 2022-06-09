@@ -110,7 +110,7 @@ class Board:
     def out(self, d):
         return not ((0 <= d.x < self.size) and (0 <= d.y < self.size))
 
-    def shot_ship(self, d):
+    def shot(self, d):
         if self.out(d):
             raise BoardOutException()
 
